@@ -26,4 +26,30 @@
         ORDER BY sort ASC, create_time DESC
     </select>
 
+    <!-- 根据父分类编号从数据库查询商品分类 -->
+    <select id="selectByParentId" resultType="com.company.project.entity.po.ProductCategoryPO">
+        SELECT * FROM product_category
+        <where>
+            <if test="parentId != null">
+                AND parent_id = #{parentId}
+            </if>
+            AND deleted = 0
+        </where>
+        ORDER BY sort ASC, create_time DESC
+    </select>
+
+    <!-- 根据分类名称和父分类编号查询商品分类 -->
+    <select id="selectByNameAndParentId" resultType="com.company.project.entity.po.ProductCategoryPO">
+        SELECT * FROM product_category
+        <where>
+            <if test="name != null and name != ''">
+                AND name = #{name}
+            </if>
+            <if test="parentId != null">
+                AND parent_id = #{parentId}
+            </if>
+            AND deleted = 0
+        </where>
+    </select>
+
 </mapper>

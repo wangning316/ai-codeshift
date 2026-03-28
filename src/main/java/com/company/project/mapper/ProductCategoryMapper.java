@@ -37,4 +37,13 @@ public interface ProductCategoryMapper extends BaseMapper<ProductCategoryPO> {
      * @return 删除影响的行数
      */
     int deleteById(Long id);
+    
+    /**
+     * 根据分类名称和父分类编号查询商品分类
+     *
+     * @param name     分类名称
+     * @param parentId 父分类编号
+     * @return 商品分类实体
+     */
+    ProductCategoryPO selectByNameAndParentId(String name, Long parentId);
 }

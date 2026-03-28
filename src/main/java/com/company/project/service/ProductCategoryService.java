@@ -1,5 +1,6 @@
 package com.company.project.service;
 
+import com.company.project.dto.CreateProductCategoryDTO;
 import com.company.project.entity.po.ProductCategoryPO;
 
 /**
@@ -10,10 +11,10 @@ public interface ProductCategoryService {
     /**
      * 创建商品分类
      *
-     * @param productCategory 商品分类实体
+     * @param createProductCategoryDTO 创建商品分类DTO
      * @return 创建后的商品分类ID
      */
-    Long createProductCategory(ProductCategoryPO productCategory);
+    Long createProductCategory(CreateProductCategoryDTO createProductCategoryDTO);
 
     /**
      * 查询商品分类
