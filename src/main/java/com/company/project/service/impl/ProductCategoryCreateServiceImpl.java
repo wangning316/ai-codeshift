@@ -42,6 +42,7 @@ public class ProductCategoryCreateServiceImpl implements ProductCategoryCreateSe
         productCategory.setPicUrl(picUrl);
         productCategory.setSort(sort);
         productCategory.setStatus(status);
+        productCategory.setDescription(description);
 
         // 设置创建时间和更新时间为当前时间
         productCategory.setCreateTime(LocalDateTime.now());

@@ -41,6 +41,11 @@ public class ProductCategory {
     private Integer status;
     
     /**
+     * 分类描述
+     */
+    private String description;
+    
+    /**
      * 创建时间
      */
     @TableField(fill = FieldFill.INSERT)

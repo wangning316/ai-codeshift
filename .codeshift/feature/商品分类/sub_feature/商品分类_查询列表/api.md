@@ -1,7 +1,7 @@
 ## 商品分类_查询列表(api)
 
 ## controller粒度
-* 独立的商品分类_查询列表controller类，ProductCategoryListController。
+* 独立的商品分类_查询列表controller类，ProductCategoryListController类。
 
 ### 接口描述
 获得商品分类列表
