@@ -5,14 +5,20 @@ package com.company.project.exception;
  */
 public class BusinessException extends RuntimeException {
 
-    private int code;
+    private String errorCode;
+    private String errorMessage;
 
-    public BusinessException(int code, String message) {
-        super(message);
-        this.code = code;
+    public BusinessException(String errorCode, String errorMessage) {
+        super(errorMessage);
+        this.errorCode = errorCode;
+        this.errorMessage = errorMessage;
     }
 
-    public int getCode() {
-        return code;
+    public String getErrorCode() {
+        return errorCode;
+    }
+
+    public String getErrorMessage() {
+        return errorMessage;
     }
 }
