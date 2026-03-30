@@ -1,0 +1,1 @@
+生成SpringBootApplication的启动类ProductApplication。
