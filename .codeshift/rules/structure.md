@@ -1,3 +1,6 @@
+# 项目结构
+严格按照项目结构创建项目目录，特别是功能根目录和子功能目录。
+
 ├── pom.xml                                    # Maven 项目核心配置文件：依赖管理、插件、项目信息
 └── src
     └── main
@@ -6,7 +9,7 @@
         │       └── github
         │           └── wenhao
         │               └── product                 # 后端服务名称
-        │                   └── feature             # 某个功能根目录
+        │                   └── feature_name        # 某个功能根目录，例如category
         │                       ├── common
         │                       │   └── pojo        # 公共POJO类：通用VO/BO/DTO等，全模块共享
         │                       ├── sub-feature1    # 子功能1
