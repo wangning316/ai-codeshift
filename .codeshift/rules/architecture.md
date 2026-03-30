@@ -2,7 +2,7 @@
 
 # 技术栈
 * 语言：Java 17
-* 框架：Spring、lombok、Mapstruct、guava
+* 框架：Spring、Mybatis-plus、lombok、Mapstruct、guava
 * 数据库： MySQL
 
 # 关键命令
