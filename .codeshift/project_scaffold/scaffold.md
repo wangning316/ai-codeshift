@@ -1,16 +1,19 @@
 # 项目脚手架
 按照下列规范生成项目脚手架。
-├── pom.xml                                         # Maven 项目核心配置文件：依赖管理、插件、项目信息
+├── pom.xml                                               # Maven 项目核心配置文件：依赖管理、插件、项目信息
 └── src
     └── main
         ├── java
         │   └── com
         │       └── github
         │           └── wenhao
-        │               └── product                 # 后端服务名称
-        │                   ├── XXApplication       # Spring服务启动类
+        │               └── product                        # 后端服务名称
+        │                   ├── XXApplication              # Spring服务启动类
+        │                   └── exception             
+        │                       ├── BusinessException      # 自定义业务异常，包含错误码与错误消息
+        │                       └── GlobalExceptionHandler # 全局异常处理，至少包含Spring的Bean Validation的异常
         └── resources
-            └── application.yml                     # SpringBoot 项目配置文件：端口、数据库、日志等
+            └── application.yml                            # SpringBoot 项目配置文件：端口、数据库、日志等
 
 # pom.xml
 
