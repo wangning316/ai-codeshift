@@ -1,6 +1,6 @@
 # 商品收藏(entity)
 ## 数据库表名
-product_favorite
+product_favourite
 
 ## 属性
 | 属性名     | 类型          | MyBatis-Plus注解 | 说明 |

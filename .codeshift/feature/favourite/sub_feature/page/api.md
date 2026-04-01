@@ -1,7 +1,7 @@
 # 商品收藏_分页查询(api)
 
 ## controller粒度
-- 独立的商品收藏_分页查询controller类，ProductFavoriteController。
+- 独立的商品收藏_分页查询controller类，ProductFavouriteController。
 
 ### 接口描述
 查询商品收藏分页列表

@@ -1,7 +1,7 @@
 ## 商品收藏_分页查询(service)
 
 ## service粒度
-* 独立的商品收藏_分页查询service类，ProductFavoritePageService。
+* 独立的商品收藏_分页查询service类，ProductFavouritePageService。
 
 ## 方法描述
 分页查询商品属性项
