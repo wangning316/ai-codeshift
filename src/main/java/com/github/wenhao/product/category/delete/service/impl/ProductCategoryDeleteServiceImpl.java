@@ -28,7 +28,7 @@ public class ProductCategoryDeleteServiceImpl implements ProductCategoryDeleteSe
             throw new BusinessException("1_008_001_000", "商品分类不存在");
         }
 
-        // 2. 参数校验：根据分类编号查询数据库校验该分类是否有子分类
+        // 2. 参数校验：查询是否有子分类
         Long childCount = productCategoryDeleteMapper.selectCount(
             new LambdaQueryWrapper<ProductCategory>()
                 .eq(ProductCategory::getParentId, id)
@@ -37,7 +37,13 @@ public class ProductCategoryDeleteServiceImpl implements ProductCategoryDeleteSe
             throw new BusinessException("1_008_001_003", "存在子分类，无法删除");
         }
 
-        // 3. 数据库操作：将分类编号数据对象从数据库删除
+        // 3. 参数校验：查询该分类下是否有SPU
+        int spuCount = productCategoryDeleteMapper.countSpuByCategoryId(id);
+        if (spuCount > 0) {
+            throw new BusinessException("1_008_001_005", "类别下存在商品，无法删除");
+        }
+
+        // 4. 数据库操作：将分类编号数据对象从数据库删除
         productCategoryDeleteMapper.deleteById(id);
 
         return true;
