@@ -1,13 +1,13 @@
-## 商品分类_删除(api)
+# 商品SPU_删除(api)
 
 ## controller粒度
-* 独立的商品分类_删除controller类，ProductCategoryDeleteController。
+* 独立的商品SPU_删除controller类，ProductSpuDeleteController。
 
 ### 接口描述
-删除商品分类
+删除商品SPU
 
 ### 请求地址
-DELETE /product/category/delete
+DELETE /product/spu/delete
 
 ### 请求方法
 DELETE
@@ -20,7 +20,7 @@ DELETE
 ### 请求参数（Query）
 | 参数名 | 类型 | 是否必填 | 说明   |
 |--------|------|----------|--------|
-| id     | Long | 是       | 分类编号 |
+| id     | Long | 是       | SPU编号 |
 
 ### 响应参数
 | 参数名 | 类型    | 说明               |
