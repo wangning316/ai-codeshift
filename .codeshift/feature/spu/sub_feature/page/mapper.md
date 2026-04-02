@@ -1,7 +1,7 @@
-# 商品品牌_查询品牌分页(mapper)
+# 商品SPU_分页查询(mapper)
 
 ## mapper粒度
-* 独立的商品品牌_查询品牌分页mapper类, ProductBrandPageMapper，不要创建通用的数据库操作对象。
+* 独立的商品SPU_分页查询mapper类, ProductSpuPageMapper，不要创建通用的数据库操作对象。
 
 ## 方法描述
-* 根据分页参数`页码`pageNo、`页面大小`pageSize查询，并同时支持按以下有值的参数查询：`品牌名称`、`品牌状态`、`创建时间范围`，从数据库查询所有`商品品牌(entity)`列表并带分页属性。
+- 从数据库分页查询所有`商品品牌(entity)`。
