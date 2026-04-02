@@ -51,7 +51,6 @@ GET
 | data.list.marketPrice | Integer   | 市场价（单位：分）|
 | data.list.costPrice | Integer    | 成本价（单位：分）|
 | data.list.stock    | Integer     | 商品库存                 |
-| data.list.skus     | List<ProductSkuRespVO> | SKU数组 |
 | data.list.deliveryTypes | List<Integer> | 配送方式数组 |
 | data.list.deliveryTemplateId | Long | 物流配置模板编号 |
 | data.list.giveIntegral | Integer | 赠送积分 |
