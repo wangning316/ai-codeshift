@@ -1,7 +1,7 @@
 # 商品SPU_创建(Service)
 
 ## mapper粒度
-* 独立的商品SPU_创建mapper类, ProductSpuCreateMapper，不要创建通用的数据库操作对象。
+- 独立的商品SPU_创建mapper类, ProductSpuCreateMapper，不要创建通用的数据库操作对象。
 
 ## 方法描述
 - 根据商品`分类编号`从数据库查询`商品分类(entity)`，需查看`category/entity/product_category.md`。
