@@ -21,4 +21,4 @@ specs
 
 ## RooCode设置
 
-导入`.roo\codeshift.yaml`文件。输入生成功能代码的指令，如`生成业务band的功能create`。
+导入`.roo\codeshift.yaml`文件。输入生成功能代码的指令，如`生成功能：业务band的功能create`。
